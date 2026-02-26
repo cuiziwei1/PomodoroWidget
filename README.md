@@ -28,9 +28,14 @@
 
 ### 方式一：直接下载使用
 
-1. 下载项目中的 `PomodoroWidget.app.zip`
+1. 从 [Releases](https://github.com/cuiziwei1/PomodoroWidget/releases) 下载最新的 `PomodoroWidget.app.zip`
 2. 解压后将 `PomodoroWidget.app` 拖到"应用程序"文件夹
-3. 双击运行（首次运行可能需要在"系统设置 → 隐私与安全性"中允许打开）
+3. 打开终端，执行以下命令进行签名和解除隔离：
+```bash
+sudo codesign --force --sign - /Applications/PomodoroWidget.app
+sudo xattr -dr com.apple.quarantine /Applications/PomodoroWidget.app
+```
+4. 双击运行
 
 ### 方式二：源码编译
 
