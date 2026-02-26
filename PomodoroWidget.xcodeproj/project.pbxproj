@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C182AA822F500F29001E3459 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182AA812F500F29001E3459 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C182AA6F2F500CF7001E3459 /* PomodoroWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C182AA812F500F29001E3459 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C182AA822F500F29001E3459 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				C182AA712F500CF7001E3459 /* PomodoroWidget */,
+				C182AA802F500F29001E3459 /* Frameworks */,
 				C182AA702F500CF7001E3459 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,14 @@
 				C182AA6F2F500CF7001E3459 /* PomodoroWidget.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C182AA802F500F29001E3459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C182AA812F500F29001E3459 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
